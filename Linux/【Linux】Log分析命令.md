@@ -39,11 +39,14 @@ wc [参数]  [文件名]
 # 4 . 字符串查找 grep
 grep命令可以查找文件中符合条件的字符串,比如：
 ``` 
-$grep -o “qq" access.log`
+$grep “qq" access.log`
 
--o参数表示输出查找结果的行
 在 access.log 文件中查找 包含字符串 “qq" 的行， 
 ```
+
+（1）限制输出的行数： 在正则后面加上 -m 行数。比如-m 20 表示输出20行
+`grep ".*louyuting" -m 20 test.log`
+输出日志文件中以louyuting结尾的行数，并且只输出20行。
 
 此外grep 还支持正则表达式，一些常用的项如下：
 
