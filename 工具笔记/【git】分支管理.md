@@ -44,4 +44,7 @@ git checkout branch -- filename
 
 （13）下面命令中注意git checkout 命令后的参数为一个点（“.”）。这条命令最危险！会取消所有本地的修改（相对于暂存区）。相当于用暂存区的所有文件直接覆盖本地文件，不给用户任何确认的机会！
 $ git checkout .
+
+(14)本地分支关联到远端分支Z:
+git branch --set-upstream-to origin/master master
 ```
